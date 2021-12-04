@@ -1,17 +1,19 @@
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.scss";
 
 const home = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <Image
-          src="/mainLogoFF.png"
-          width={150}
-          height={50}
-          alt="logo"
-          className={styles.logo}
-        ></Image>
+        <div className={styles.headerImageContainer}>
+          <Image
+            src="/mainLogoFF.png"
+            alt="logo"
+            className={styles.logo}
+            layout="fill"
+            objectFit="contain"
+          ></Image>
+        </div>
       </div>
       <div className={styles.bodyWrapper}>
         <div className={styles.body}>
@@ -29,13 +31,15 @@ const home = () => {
             506, Zion, Sector 10, Kharghar, Navi Mumbai.
           </span>
           <span className={styles.numberWrapper}>
-            <Image
-              src="/phoneIcon.png"
-              width={24}
-              height={24}
-              alt="contactIcon"
-              className={styles.logo}
-            ></Image>
+            <div className={styles.imageContainer}>
+              <Image
+                src="/phoneIcon.png"
+                alt="contactIcon"
+                className={styles.logo}
+                layout="fill"
+                objectFit="contain"
+              ></Image>
+            </div>
             <span className={styles.phoneNumber}> 8779444199</span>
           </span>
         </div>

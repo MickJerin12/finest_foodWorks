@@ -1,13 +1,12 @@
 .container {
   display: flex;
   flex-direction: column;
-  width: 96%;
+  width: 100%;
   height: 100%;
 }
 
 .header {
   display: flex;
-  width: 100%;
   justify-content: flex-start;
   height: 100px;
   margin-left: 40px;
@@ -16,7 +15,7 @@
 
 .bodyWrapper {
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   align-items: center;
   justify-content: center;
@@ -26,17 +25,38 @@
 .body {
   display: flex;
   width: 100%;
-  height: 250px;
+  height: 35vh;
   align-items: center;
   justify-content: center;
   background: #f02944;
 }
 
 .label {
-  font-size: 40px;
   font-weight: 800;
   color: white;
   font-style: italic;
+  text-align: center;
+  font-size: 3vw;
+  @media (max-width: 1025px) {
+    font-size: 40px;
+  }
+}
+
+.imageContainer .image {
+  width: 100%;
+  height: 100%;
+  position: relative !important;
+  object-fit: cover;
+}
+
+.imageContainer {
+  height: 2.5vh;
+  width: 1.5vw;
+  position: relative;
+  @media (max-width: 1025px) {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .footer {
@@ -47,27 +67,37 @@
   color: #092147;
   margin-bottom: 30px;
   width: 100vw;
+  flex-wrap: wrap;
 }
 
 .footerLabel {
   font-weight: 600;
+  font-size: 1vw;
+  @media (max-width: 1025px) {
+    font-size: 16px;
+  }
 }
 
 .emailAddress {
   color: #f02944;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.5vw;
+  @media (max-width: 1025px) {
+    font-size: 18px;
+  }
 }
 
 .textWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 8px;
 }
 .addressWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 8px;
 }
 
 .numberWrapper {
@@ -82,9 +112,26 @@
 
 .phoneNumber {
   margin-left: 4px;
+  font-size: 1.5vw;
+  @media (max-width: 1025px) {
+    font-size: 18px;
+  }
 }
 
 .address {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1vw;
+  @media (max-width: 1025px) {
+    font-size: 16px;
+  }
+}
+
+.headerImageContainer {
+  height: 9.5vh;
+  width: 19.5vw;
+  position: relative;
+  @media (max-width: 1025px) {
+    width: 150px;
+    height: 50px;
+  }
 }
