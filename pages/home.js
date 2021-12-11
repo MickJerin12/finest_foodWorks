@@ -7,7 +7,7 @@ const home = () => {
       <div className={styles.header}>
         <div className={styles.headerImageContainer}>
           <Image
-            src="/mainLogoFF.png"
+            src="/ffLogo.png"
             alt="logo"
             className={styles.logo}
             layout="fill"
@@ -40,7 +40,7 @@ const home = () => {
                 objectFit="contain"
               ></Image>
             </div>
-            <span className={styles.phoneNumber}> 8779444199</span>
+            <span className={styles.phoneNumber}> 022-69099138</span>
           </span>
         </div>
       </div>
